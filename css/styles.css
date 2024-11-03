@@ -1,19 +1,213 @@
-/* Use import to split up your CSS into manageable chunks */
-@import url("./reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
-@import url("./variables.css");
-/* Feel free to add as many of these imports as you need */
-
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  font-family: 'Montserrat';
+  margin: 0;
+  background-color: #FFFFFF;
 }
 
-.centered {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a3641;
+  padding: 20px;
+}
+
+.header-left, .header-center, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-center {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-right {
+  gap: 20px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 100px;
+}
+
+nav a, nav input[type="text"] {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 474px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #0A3641; opacity: 0.85;
+  padding: 20px;
+  color: #FFFFFF;
+  max-width: 400px;
+}
+
+.hero-overlay p {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+
+.new-releases-title {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  font-size: 40px;
+  color: #0a3641;
+  margin: 0;
+  padding: 58px 0;
+}
+
+.new-releases {
+  padding-bottom: 30%;
+}
+
+
+
+.jacket-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.jacket-item {
+  flex: 1 1 45%;
+  padding: 50px;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
+.jacket-item {
+  padding: 5px;
+  border-radius: 4px;
+} 
+
+.jacket-item .jacket-image {
+  border: 1px solid #CCCCCC; 
+  border-radius: 4px;
+  width: 300px; 
+  height: 1200px;
+  max-height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.jacket-description h3 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  color: #0A3641;
+}
+
+.jacket-description p {
+  font-size: 18px;
+  color: #0A3641;
+}
+
+.color-options {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.color-square {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  border: 1px solid #ddd;
+}
+
+
+.footer {
+  background-color: #0A3641;
+  color: #FFFFFF;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  font-family: 'Montserrat';
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%; 
+  max-width: 1200px; 
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.footer-section ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+
