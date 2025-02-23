@@ -1,7 +1,14 @@
-/* Use this file to store your useful variables */
-/* This could be colors, fonts, or padding sizes! */
-
+/* variables.css */
 :root {
-  --color-primary: #7be447;
-  --color-secondary: #1f1f1f;
+  --primary-color: #0A3641;
+  --secondary-color: #FFFFFF;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Playwrite BR', sans-serif;
+  --hero-overlay-color: rgba(10, 54, 65, 0.81);
+  --new-releases-title-size: 40px;
+  --jacket-border-color: #CCCCCC;
+  --footer-bg-color: #0A3641;
+  --footer-text-color: #FFFFFF;
+  --footer-link-hover: #CCCCCC;
+  --color-square-size: 16px;
 }

@@ -1,3 +1,10 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
 .hero {
     position: relative;
     text-align: center;
@@ -10,7 +17,6 @@
     object-fit: cover;
     object-position: center;
 }
-
 
 
 
@@ -33,7 +39,6 @@
 .breadcrumbs span {
     color: #333;
 }
-
 
 
 .mens-categories {

@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RainyDays - Stay protected and ready!</title>
-    <link rel="stylesheet" href="path/to/reset.css">
-    <link rel="stylesheet" href="path/to/variables.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+BR:wght@100..400&display=swap" rel="stylesheet">
+    <title>RainyDays</title>
 
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/whoweare.css">
 </head>
 <body>
     <header>
         <div class="header-left">
-            <div class="logo">
-                <img src="assets/images/rainydays-logo-w.png" alt="RainyDays Logo">
-            </div>
+            <a href="index.html">
+                <div class="logo">
+                    <img src="assets/images/rainydays-logo-w.png" alt="RainyDays Logo">
+                </div>
+            </a>
         </div>
 
         <div class="header-center">
@@ -25,11 +25,12 @@
                 <ul>
                     <li><a href="womens.html">Women's</a></li>
                     <li><a href="mens.html">Men's</a></li>
-                    <li><a href="#">New</a></li>
+                    <li><a href="index.html">New</a></li>
+                    <li><a href="whoweare.html">Who we are</a></li>
                 </ul>
             </nav>
         </div>
-        
+
         <div class="header-right">
             <input type="text" placeholder="search">
             <a href="#"><img src="assets/images/account-icon.png" alt="Account Icon"></a>
@@ -37,86 +38,102 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero">
-        <img src="assets/images/vecteezy-2y.png" alt="Forest Image" class="hero-img">
-        <div class="hero-overlay">
-            <p>Our rain jackets are built to keep you dry and comfortable, whether you're tackling tough trails or city streets. Stay protected and ready for any adventure!</p>
-        </div>
-    </div>
+
+    <main>
+        <section class="hero">
+            <img src="assets/images/vecteezy-2y.png" alt="Two people walking in rainy forest" class="hero-img">
+        </section>
+        <nav class="mens-categories">
+            <ul>
+                <li><a href="#">Ski & Ride</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Hard Shell</a></li>
+            </ul>
+        </nav>
+
+        <section class="filter-bar">
+    <label for="category-filter">Category:</label>
+    <select id="category-filter" onchange="location = this.value;">
+        <option value="index.html">All</option>
+        <option value="index.html#ski-ride">Ski & Ride</option>
+        <option value="index.html#travel">Travel</option>
+        <option value="index.html#hard-shell">Hard Shell</option>
+    </select>
+
+    <label for="gender-filter">Gender:</label>
+    <select id="gender-filter" onchange="location = this.value;">
+        <option value="#">Select</option>
+        <option value="womens.html">Women's</option>
+        <option value="mens.html">Men's</option>
+    </select>
     </section>
+</section>
+        
+    </main>
 
     <section class="new-releases">
-        <h2 class="new-releases-title">NEW RELEASES</h2>
-        <div class="jacket-grid">
-            <div class="jacket-item">
-                <img src="assets/images/jacket1.jpg" alt="Fleece Jacket" class="jacket-image">
-                <div class="jacket-description">
-                    <h3>Fleece Jacket</h3>
-                    <p>$40</p>
-                    <div class="color-options">
-                        <span class="color-square" style="background-color: #0A3641;"></span>
-                        <span class="color-square" style="background-color: #FFFFFF;"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="jacket-item">
-                <img src="assets/images/jacket2.jpg" alt="Utility Jacket" class="jacket-image">
-                <div class="jacket-description">
-                    <h3>Utility Jacket</h3>
-                    <p>$85</p>
-                    <div class="color-options">
-                        <span class="color-square" style="background-color: #333333;"></span>
-                        <span class="color-square" style="background-color: #999999;"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="jacket-item">
-                <img src="assets/images/jacket3.jpg" alt="Light Jacket" class="jacket-image">
-                <div class="jacket-description">
-                    <h3>Light Jacket</h3>
-                    <p>$45</p>
-                    <div class="color-options">
-                        <span class="color-square" style="background-color: #111111;"></span>
-                        <span class="color-square" style="background-color: #777777;"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="jacket-item">
-                <img src="assets/images/jacket4.jpg" alt="Bike Jacket" class="jacket-image">
-                <div class="jacket-description">
-                    <h3>Bike Jacket</h3>
-                    <p>$130</p>
-                    <div class="color-options">
-                        <span class="color-square" style="background-color: #555555;"></span>
-                        <span class="color-square" style="background-color: #DDDDDD;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <h2 class="new-releases-title">NEW RELEASES</h2> 
 
-    
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Customer Service</h3>
-                <ul>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Delivery Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div> 
-    
-            <div class="footer-section">
-                <h3>Our Company</h3>
-                <ul>
-                    <li><a href="whoweare.html">Who We Are</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div> 
-    
+            <div class="jacket-grid">
+                <div class="jacket-item">
+                    <img src="assets/images/jacket6.jpg" alt="Black-Gray Rider Jacket" class="jacket-image">
+                    <div class="jacket-description">
+                        <h3>Rider Jacket</h3>
+                        <p>$65</p>
+                        <div class="color-options">
+                            <span class="color-square" style="background-color: #0A3641;"></span>
+                            <span class="color-square" style="background-color: #FFFFFF;"></span>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="jacket-item">
+                    <img src="assets/images/hoodedjacketwindproof.png" alt="Red Windproof Jacket" class="jacket-image">
+                    <div class="jacket-description">
+                        <h3>Windproof Jacket</h3>
+                        <p>$75</p>
+                        <div class="color-options">
+                            <span class="color-square" style="background-color: #333333;"></span>
+                            <span class="color-square" style="background-color: #999999;"></span>
+                        </div>
+                    </div>
+                </div> 
+            
+            
+                <div class="jacket-item">
+                    <img src="assets/images/jacket5.jpg" alt="Red Bike Jacket" class="jacket-image">
+                    <div class="jacket-description">
+                        <h3>Bike Jacket</h3>
+                        <p>$45</p>
+                        <div class="color-options">
+                            <span class="color-square" style="background-color: #333333;"></span>
+                            <span class="color-square" style="background-color: #999999;"></span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+    </section> 
+
+    <footer>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Delivery Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-section">
+          <h3>Our Company</h3>
+          <ul>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>      
+
             <div class="footer-section">
                 <h3>Follow Us</h3>
                 <ul class="social-icons">
@@ -124,10 +141,8 @@
                     <li><a href="#"><img src="assets/images/instagram-icon.png" alt="Instagram"></a></li>
                     <li><a href="#"><img src="assets/images/youtube-icon.png" alt="YouTube"></a></li>
                 </ul>
-            </div> 
-        </div> 
+            </div>
+        </div>
     </footer>
-    
-    
 </body>
 </html>

@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="womens.html">Women's</a></li>
                     <li><a href="mens.html">Men's</a></li>
-                    <li><a href="#">New</a></li>
+                    <li><a href="index.html">New</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,6 +48,24 @@
             <li><a href="#">Hard Shell</a></li>
         </ul>
     </nav>
+
+    <section class="filter-bar">
+        <label for="category-filter">Category:</label>
+        <select id="category-filter" onchange="location = this.value;">
+            <option value="index.html">All</option>
+            <option value="index.html#ski-ride">Ski & Ride</option>
+            <option value="index.html#travel">Travel</option>
+            <option value="index.html#hard-shell">Hard Shell</option>
+        </select>
+    
+        <label for="gender-filter">Gender:</label>
+        <select id="gender-filter" onchange="location = this.value;">
+            <option value="#">Select</option>
+            <option value="womens.html">Women's</option>
+            <option value="mens.html">Men's</option>
+        </select>
+        </section>
+        
     <nav class="breadcrumbs">
         <a href="index.html">Home</a> &gt;
         <a href="womens.html">Women's</a>
@@ -85,34 +103,33 @@
     </section>
 
     
-    <footer class="footer">
-        <div class="footer-container">
+    <footer>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Delivery Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-section">
+          <h3>Our Company</h3>
+          <ul>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>      
+
             <div class="footer-section">
-                <h3>Customer Service</h3>
-                <ul>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Delivery Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="assets/images/facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="assets/images/instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="assets/images/youtube-icon.png" alt="YouTube"></a></li>
                 </ul>
             </div>
-
-        <div class="footer-section">
-            <h3>Our Company</h3>
-            <ul>
-                <li><a href="whoweare.html">Who We Are</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h3>Follow Us</h3>
-            <ul class="social-icons">
-                <li><a href="#"><img src="assets/images/facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="assets/images/instagram-icon.png" alt="Instagram"></a></li>
-                <li><a href="#"><img src="assets/images/youtube-icon.png" alt="YouTube"></a></li>
-            </ul>
-        </div>
         </div>
     </footer>
     
